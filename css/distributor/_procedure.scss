@@ -1,0 +1,199 @@
+.procedure_section{
+    width: 100%; padding-bottom: 110px;
+    h2{
+        text-align: center; padding-bottom: 46px; position: relative; font-size: 66px;
+        &:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 126px;
+            height: 4px;
+            background-color: var(--primary-color);
+            content: "";
+        }
+    }
+    .main_section{
+        width: 100%; margin-top: 104px;
+        .row{
+            margin: 0 -35px;
+            .col-lg-4{
+                padding: 0 35px;
+            }
+        }
+        .portion{
+            width: 100%; background-color: var(--ternary-color); min-height: 584px; padding: 88px 70px 0 70px; position: relative; margin-bottom: 70px;
+            .icon_back{
+                margin-bottom: 58px;
+            }
+            img{
+                display: block;
+                
+            }
+            p{
+                font-size: 34px; font-weight: 500;  line-height: 52px;
+            }
+            &::before{
+                width: 100%;
+                height: 100%;
+                border: var(--primary-color) 2px solid;
+                position: absolute;
+                top: 26px;
+                left: 26px;
+                content: "";
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:2099px){
+    .procedure_section{
+        .main_section{
+            .portion{
+                padding: 70px 40px 0 60px; min-height: 525px;
+                .icon_back{
+                    margin-bottom: 45px;
+                }
+                img{
+                    height: 122px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1919px){
+    .procedure_section{
+        padding-top: 0;
+        h2{
+            font-size: 50px;
+        }
+        .main_section{
+            .row{
+                margin: 0 -25px;
+                .col-lg-4{
+                    padding: 0 25px;
+                }
+            }
+            .portion{
+                padding-right: 20px; min-height: 412px; padding-top: 70px;
+                p{
+                    font-size: 19px; line-height: 36px;
+                }
+                .icon_back{
+                    margin-bottom: 38px;
+                }
+                img{
+                    height: 122px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .procedure_section{
+        padding-bottom: 46px;
+        h2{
+            font-size: 50px;
+        }
+        .main_section{
+            margin-top: 84px;
+            .row{
+                margin: 0 -15px;
+                .col-lg-4{
+                    padding: 0 15px;
+                }
+            }
+            .portion{
+                min-height: 312px; padding: 40px 20px 0 40px;
+                &::before{
+                    top: 16px;
+                    left: 16px;
+                }
+                p{
+                    font-size: 16px; line-height: 26px;
+                }
+                .icon_back{
+                    margin-bottom: 28px;
+                }
+                img{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1023px){
+    .procedure_section{
+        h2{
+            font-size: 40px;
+        }
+        .main_section{
+            min-height: 312px; 
+            .portion{
+                padding: 40px; text-align: center;
+                &::before{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: calc(100% - 30px);
+                    height: calc(100% - 30px);
+                }
+            }
+            p{
+                font-size: 16px; line-height: 26px;
+            }
+            .icon_back{
+                margin-bottom: 28px; display: inline-block;
+            }
+            img{
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:450px){
+    .procedure_section{
+        h2{
+            font-size: 30px;
+        }
+        .main_section{
+            
+            .portion{
+                min-height: auto; padding: 40px; text-align: center; margin-bottom: 30px;
+                &::before{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: calc(100% - 30px);
+                    height: calc(100% - 30px);
+                }
+            }
+            p{
+                font-size: 16px; line-height: 26px;
+            }
+            .icon_back{
+                margin-bottom: 28px; display: inline-block;
+            }
+            img{
+                height: 100px;
+            }
+        }
+    }
+}

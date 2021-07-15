@@ -1,0 +1,179 @@
+.options_techniques_section{
+    width: 100%;
+    background-color: var(--dark-color);
+    h2{
+        color: var(--white-color); text-align: center; font-size: 86px; margin-bottom: 145px;
+    }
+    .main_section{
+        width: 100%;
+        .row{
+            margin: 0 -90px;
+            .col-lg-4{
+                padding: 0 90px;
+            }
+        }
+        .portion{
+            img{
+                margin-bottom: 100px;
+            }
+            h3, p{
+                color: var(--white-color);
+            }
+            h3{
+                font-size: 72px; margin-bottom: 55px;
+            }
+            p{
+                font-size: 37px; 
+                line-height: 66px;
+            
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:2099px){
+    .options_techniques_section{
+        h2{
+            font-size: 82px;
+        }
+        .main_section{
+            width: 100%;
+            .row{
+                margin: 0 -50px;
+                .col-lg-4{
+                    padding: 0 25px;
+                }
+            }
+            .portion{
+                h3{
+                    font-size: 60px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    margin-bottom: 60px;
+                }
+                p{
+                    font-size: 32px;
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1919px){
+    .options_techniques_section{
+        h2{
+            font-size: 50px;     margin-bottom: 82px;
+        }
+        .main_section{
+            width: 100%;
+            .row{
+                margin: 0 -25px;
+                .col-lg-4{
+                    padding: 0 25px;
+                }
+            }
+            .portion{
+                h3{
+                    font-size: 45px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    margin-bottom: 60px; height: 113px;
+                }
+                p{
+                    font-size: 25px;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1365px){
+    .options_techniques_section{
+        h2{
+            font-size: 50px;     margin-bottom: 52px;
+        }
+        .main_section{
+            width: 100%;
+            .row{
+                margin: 0 -15px;
+                .col-lg-4{
+                    padding: 0 15px;
+                }
+            }
+            .portion{
+                h3{
+                    font-size: 36px;
+                    margin-bottom: 45px;
+                }
+                img{
+                    margin-bottom: 60px; height: 113px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .options_techniques_section{
+        padding-bottom: calc(96px - 80px);
+        .main_section{
+            .portion{
+                text-align: center;
+                margin-bottom: 80px;
+                img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:779px){
+    .options_techniques_section{
+        padding-bottom: calc(96px - 80px);
+        h2{
+            font-size: 34px;
+        }
+        .main_section{
+            .portion{
+                text-align: center;
+                margin-bottom: 80px;
+                img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .options_techniques_section{
+        padding-bottom: calc(96px - 80px);
+        h2{
+            font-size: 30px;
+        }
+        .main_section{
+            .portion{
+                text-align: center;
+                margin-bottom: 60px;
+                img{
+                    margin-bottom: 25px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

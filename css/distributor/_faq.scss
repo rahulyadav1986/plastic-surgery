@@ -1,0 +1,134 @@
+.faq_section{
+    width: 100%; background-color: var(--light-golden);
+    h2{
+        text-align: center;
+        padding-bottom: 46px;
+        position: relative;
+        font-size: 76px;
+        span{
+            color: var(--primary-color);
+        }
+    }
+    .main_faq_section{
+        width: 100%;
+        .accordion_back{
+            max-width: 800px; width: 100%; margin-top: 80px;
+            .accordion{
+                width: 100%;
+                .card{
+                    background-color: transparent; box-shadow: none; border: none;
+                    width: 100%;
+                    .card-header{
+                        text-align: left; width: 100%; background-color: transparent; border: none; border-top: #e3e3e2 1px solid; 
+                        color: #000; font-size: 28px; font-weight: 600; padding: 42px 0 42px; line-height: 42px; position: relative;
+                        .fa{
+                            width: 50px; height: 100%; position: absolute; top: 0; right: 0;color: #fff; content: ""; background-position: center center; background-repeat: no-repeat; cursor: pointer;
+                            &::before{ content: "";}
+                            &.fa-plus{
+                                background-image: url(../images/plus.png); 
+                            }
+                            &.fa-minus{
+                                background-image: url(../images/minus.png); 
+                            }
+                        }
+                    }
+                    .card-body{
+                        font-size: 27px; font-weight: normal; line-height: 35px; border-bottom: #e3e3e2 1px solid; padding-bottom: 42px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:2099px){
+    .faq_section{
+        h2{
+            font-size: 70px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1919px){
+    .faq_section{
+        h2{
+            font-size: 50px;
+        }
+      
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .faq_section{
+       
+        .main_faq_section {
+            .accordion_back {
+                .accordion {
+                    .card{
+                        .card-header{
+                            font-size: 20px; padding: 20px 0;
+                        }
+                        .card-body{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+   
+
+
+@media only screen and (max-width:1023px){
+    .faq_section{
+        h2{
+            font-size: 50px;
+        }
+        .main_faq_section {
+            .accordion_back {
+                .accordion {
+                    .card{
+                        .card-header{
+                            font-size: 18px; padding: 20px 0;
+                        }
+                        .card-body{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:500px){
+    .faq_section{
+        h2{
+            font-size: 24px;
+        }
+        .main_faq_section {
+            .accordion_back {
+                margin-top: 26px;
+                .accordion {
+                    .card{
+                        .card-header{
+                            font-size: 14px; padding: 10px 40px 10px 0; line-height: 24px;
+                        }
+                        .card-body{
+                            font-size: 12px; line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+   
+   
+
+

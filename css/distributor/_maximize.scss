@@ -1,0 +1,293 @@
+.maximize_section{
+    width: 100%; position: relative; min-height: 1309px;
+    background-color: var(--golden-color);
+    h2{
+        font-size: 90px; line-height: 115px; margin-bottom: 30px;
+        span{
+            color: var(--primary-color);
+        }
+    }
+    .sec_ava{
+        position: absolute; top: 0; right: 0; height: 100%; width: 48%; object-fit: cover;
+    }
+}
+
+
+.maximize_section_bottom_options{
+    width: 100%; position: relative;
+    z-index: 99;
+    margin-top: calc(-342px + 80px);
+    .portion{
+        width: 100%;
+        height: 462px;
+        background-color: var(--white-color);
+        border: var(--primary-color) 2px solid;
+        margin: 0 -1px;
+        position: relative;
+        z-index: 1;
+        &:first-child{
+            margin-top: -120px !important;
+        }
+        &:nth-child(2n+1){
+            margin-top: 60px;
+        }
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary-color);
+            top: 0;
+            left: 0;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .5s ease-in-out;
+        }
+        &::after{
+            width: calc(100% - 28px);
+            height: calc(100% - 28px);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: "";
+            position: absolute;
+            border: var(--white-color) 2px solid;
+            margin: auto;
+            background-image: url(../../images/arrow.png);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            opacity: 0;
+            visibility: hidden;
+            
+        }
+        &:hover{
+            &::before, &::after{
+                opacity: 1;
+                visibility: visible;
+            }
+            &::after{
+                transition: all 1s ease-in-out;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        p{
+            font-size: 34px;
+            font-weight: 600;
+            margin-top: 70px;
+        }
+    }
+}
+
+.consult_info_section{
+    width: 100%; text-align: center;
+    h2{
+        font-size: 55px;     width: 72%;line-height: 86px; clear: both; margin-bottom: 65px;
+        a{
+            color: var(--primary-color);
+        }
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:2099px){
+    .maximize_section {
+        min-height: 1121px;
+        h2{
+            font-size: 72px;
+            line-height: 92px;
+        }
+        
+    }
+
+    .maximize_section_bottom_options {
+        margin-top: calc(-268px + 80px);
+        .portion {
+            height: 375px;
+            p{
+                font-size: 25px;
+            }
+        }
+       
+    }
+    
+}
+@media only screen and (max-width:1919px){
+    .maximize_section {
+        min-height: 785px;
+        h2{
+            font-size: 50px;
+            line-height: 70px;
+        }
+        
+    }
+
+    .maximize_section_bottom_options {
+        margin-top: calc(-256px + 80px);
+        .portion {
+            &:first-child{
+                margin-top: -63px !important;
+            }
+            height: 314px;
+            img{
+                width: 100px;
+            }
+            p{
+                font-size: 20px;     margin-top: 43px;
+            }
+        }
+       
+    }
+
+    .consult_info_section{
+        h2{
+            font-size: 40px;     width: 70%;line-height: 74px; margin-bottom: 65px;
+           
+        }
+        
+    }
+    
+}
+
+@media only screen and (max-width:1365px){
+    .maximize_section {
+        min-height: 638px;
+        h2{
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 11px;
+        }
+        
+    }
+
+    .maximize_section_bottom_options {
+        margin-top: calc(-227px + 80px);
+        .portion {
+            &:first-child{
+                margin-top: -63px !important;
+            }
+           
+            height: 282px;
+            img{
+                width: 100px;
+            }
+            p{
+                font-size: 16px;     margin-top: 25px;
+            }
+        }
+       
+    }
+
+    .consult_info_section{
+        h2{
+            font-size: 40px;     width: 86%;line-height: 74px; margin-bottom: 65px;
+           
+        }
+        
+    }
+    
+}
+
+@media only screen and (max-width:1023px){
+    .maximize_section {
+        min-height: auto; padding-top: 0; text-align: center;
+        .container{
+            padding: 0;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 11px;
+        }
+        .sec_ava{
+            width: 100%;
+            position: relative;
+            margin-bottom: 90px;
+        }
+        
+        
+        
+    }
+
+    .maximize_section_bottom_options {
+        margin-top: 50px;
+        .container{
+            flex-wrap: wrap; justify-content: space-between !important;
+        }
+        .portion {
+            flex: 0 0 48%; margin: 0 0 40px 0 !important; 
+            &:first-child{
+                margin-top: 0 !important;
+            }
+            &:nth-child(2n+1){
+                margin-top: 0;
+            }
+            &:last-child{
+                flex: 0 0 100%;
+            }
+            height: 278px;
+            img{
+                width: 100px;
+            }
+            p{
+                font-size: 16px;     margin-top: 25px;
+            }
+        }
+       
+    }
+
+    .consult_info_section{
+        h2{
+            font-size: 30px;     width: 86%;line-height: 60px; margin-bottom: 65px;
+           
+        }
+        
+    }
+    
+}
+
+
+
+@media only screen and (max-width:450px){
+    .maximize_section {
+        padding: 0 0 50px 0;
+        h2{
+            font-size: 30px;
+            line-height: 43px;
+        }
+        .sec_ava{
+            margin-bottom: 50px;
+        }
+    }
+    .maximize_section_bottom_options {
+        .portion{
+           flex: 0 0 100%;
+            img{
+                width: 72px;
+            }
+            p{
+                margin-top: 13px;
+            }
+        }
+    }
+
+    .consult_info_section{
+        padding: 30px 0;
+        h2{
+            font-size: 18px;     width: 86%;line-height: 36px; margin-bottom: 65px;
+           
+        }
+        
+    }
+}
+
+
+
+
+
