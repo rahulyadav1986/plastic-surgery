@@ -540,19 +540,7 @@ header ul.menu li:hover ul {
   }
 }
 
-@media only screen and (max-width: 1799px) {
-  header .logo img {
-    height: 70px;
-  }
-  header ul.menu li {
-    margin-right: 50px;
-  }
-  header ul.menu li a {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 1599px) {
+@media only screen and (max-width: 1919px) {
   header .logo img {
     height: 90px;
   }
