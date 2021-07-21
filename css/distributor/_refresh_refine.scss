@@ -1,0 +1,137 @@
+.refreshed_refine{
+    width: 100%; height: 1250px;
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content_area{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: rgba(0,0,0,.5);
+
+        h2{
+            color: var(--white-color);
+            font-weight: normal;
+            font-size: 170px;
+            text-align: center;
+            line-height: 238px;
+            span{
+                color: var(--primary-color);
+            }
+        }
+        .custom_button{
+            margin-top: 150px;
+            &.button2{
+                width: 38%;
+                a{
+                    background-color: var(--primary-color);
+                    color: var(--dark-color);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:2099px){
+    .refreshed_refine{
+        .content_area{
+            h2{
+                font-size: 130px;
+                line-height: 200px;
+            }
+            .custom_button{
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1919px){
+    .refreshed_refine{
+        height: 1050px;
+        .content_area{
+            h2{
+                font-size: 100px;
+                line-height: 150px;
+            }
+            .custom_button{
+                margin-top: 70px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .refreshed_refine{
+        height: 800px;
+        .content_area{
+            h2{
+                font-size: 80px;
+                line-height: 120px;
+            }
+            .custom_button{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .refreshed_refine{
+        height: 600px;
+        .content_area{
+            h2{
+                font-size: 60px;
+                line-height: 100px;
+            }
+            .custom_button{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:779px){
+    .refreshed_refine{
+        height: 500px;
+        .content_area{
+            h2{
+                font-size: 40px;
+                line-height: 60px;
+            }
+            .custom_button{
+                margin-top: 40px;
+                &.button2{
+                    width:60%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .refreshed_refine{
+        height: 400px;
+        .content_area{
+            h2{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .custom_button{
+                margin-top: 25px;
+                &.button2{
+                    width:80%;
+                }
+            }
+        }
+    }
+}

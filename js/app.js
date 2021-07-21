@@ -35,6 +35,29 @@ jQuery('#testimonial-carousel').owlCarousel({
         }
     }
 });
+jQuery('#testimonial-carousel2').owlCarousel({
+    loop:false,
+    margin:0,
+    nav:true,
+    navText:[
+        ("<span><img src='images/l_arrow.png' /></span>"),
+        ("<span><img src='images/r_arrow.png' /></span>"),
+    ],
+	dots:true,
+    autoplay:true,
+	
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
 
 jQuery('#before_after-carousel').owlCarousel({
     loop:false,
