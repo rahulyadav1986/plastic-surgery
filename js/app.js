@@ -5,11 +5,7 @@ $('.mobile_menu').slicknav({
     prependTo: 'header .container',
     closedSymbol: '+',
     openedSymbol: '-',
-    init: function () {
-        /*$('.slicknav_nav').find('ul').removeClass('dropdown-nav');
-        $('.slicknav_nav').find('li').removeClass('dropdown-show');
-        $('.slicknav_nav').find('a').removeClass('arrow-toggle');*/
-    }
+    allowParentLinks:"true",
 });
 
 jQuery('#testimonial-carousel').owlCarousel({
@@ -104,7 +100,11 @@ jQuery(".collapse.show").each(function(){
     }
     
 
- })
+ });
+
+ $('[data-fancybox="gallery"]').fancybox({
+	
+});
 
 
 
